@@ -66,7 +66,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   margin: 0;
-  padding: 0;
+  padding: 40px;
   position: relative; }
 
 a:hover {
@@ -125,7 +125,7 @@ select {
 
 .row {
   margin: 0 auto;
-  max-width: 43.13em;
+  max-width: 60.0em;
   width: 100%; }
   .row:before, .row:after {
     content: " ";
