@@ -45,5 +45,9 @@ function km_remove_header_stuff() {
 }
 add_action('after_setup_theme', 'km_remove_header_stuff');
 
+/*** HIDE ADMIN BAR ***/
+add_filter('show_admin_bar', '__return_false');
+
+
 
 ?>

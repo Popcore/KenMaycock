@@ -1,6 +1,26 @@
 <?php get_header(); ?>
 
 <div id="main-content" class="row">
+
+	<div id="slide-menu">
+		<ul>
+			<a href="#">
+				<li>Biography</li>
+			</a>
+			<a href="#">
+				<li>Artist Statement</li>
+			</a>
+			<a href="#">
+				<li>Work</li>
+			</a>
+			<a href="#">
+				<li>Exhibition</li>
+			</a>
+			<a href="#">
+				<li>Contact</li>
+			</a>
+		</ul>
+	</div>
 	<aside class="small-2 large-2 columns hide-for-small-only">
 		<ul>
 			<a href="#">
