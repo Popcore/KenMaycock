@@ -1,0 +1,25 @@
+
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
+!wp-content/
+ 
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+
+wp-content/themes/*
+!wp-content/themes/bamford/
+
+ 
+# Ignore all .css files in library except main compiled style.css
+*.sass-cache*
+wp-content/themes/bamford/library/*.css
+!wp-content/themes/bamford/style.css
+!wp-content/themes/bamford/library/style.css
+!wp-content/themes/bamford/library/early-is.css
+  
+
+ 
