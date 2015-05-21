@@ -39,12 +39,27 @@ h1 {
 	margin-bottom: 15px;
 }
 
+.menu-icon-wrapper {
+	float: right;
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+
 /*** ASIDE ***/
 aside {
 	padding-left: 0 !important;
 }
 
+img#menu-icon {
+	float: right;
+}
 
+@media only screen and (max-width: 640px) { 
+	.hide-for-small-only {
+		display: none;
+	}
+}
 
 /*** MAIN ***/
 #main-content {
@@ -52,6 +67,12 @@ aside {
 	display: block;
 	height: 100%;
 	padding-right: 0 !important; 
+}
+
+@media only screen and (max-width: 640px) { 
+	#main-content  {
+		padding-left: 0 !important;
+	}
 }
 
 /*** HOME ***/
