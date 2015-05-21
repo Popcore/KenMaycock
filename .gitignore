@@ -10,9 +10,6 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 
-wp-content/themes/*
-!wp-content/themes/bamford/
-
  
 # Ignore all .css files in library except main compiled style.css
 *.sass-cache*
