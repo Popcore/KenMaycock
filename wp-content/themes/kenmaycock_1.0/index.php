@@ -3,13 +3,7 @@
 <div id="main-content" class="row">
 
 	<aside id="slide-menu" class="small-2 large-2 columns hide-for-small-only">
-		<ul>
-				<li class="menu-items"><a href="#">Biography</a></li>			
-				<li class="menu-items"><a href="#">Artist Statement</a></li>
-				<li class="menu-items"><a href="#">Work</a></li>
-				<li class="menu-items"><a href="#">Exhibition</a></li>
-				<li class="menu-items"><a href="#">Contact</a></li>
-		</ul>
+		<?php get_sidebar(); ?>
 	</aside>
 
 	<div id="main-content" class="small-10 medium-8 large-8 columns">

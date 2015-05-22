@@ -6,8 +6,14 @@ function km_setup() {
 
 	// Enable support for Post Thumbnails, and declare two sizes.
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 316, 176, true );
-	add_image_size( 'PIN-full-width', 960, 540, true );
+	// set_post_thumbnail_size( 316, 176, true );
+
+	if(!get_option("medium_crop")) {
+		add_option("medium_crop", "1");
+	} else {
+		update_option("medium_crop", "1");
+	}
+    
 }
 add_action('after_setup_theme', 'km_setup');
 
@@ -30,7 +36,7 @@ add_action('wp_enqueue_scripts', 'km_footer_enqueue_scripts');
 
 
 /*** IMPORT PORT TYPES ***/
-//include_once('post-types/post-types.php');
+include_once('include/post-types.php');
 
 
 /*** REMOVE UNWANTED WP STUFF ***/
