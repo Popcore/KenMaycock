@@ -19,7 +19,6 @@ html{
 }
 body {
   min-height: 100%;
-  padding: 40px;
 }
 
 .inactive {
@@ -32,6 +31,7 @@ header {
 	margin-bottom: 30px !important;
 	position: relative;
 	top: -10px;
+	z-index: 3;
 }
 
 header>div#logo-wrapper {
@@ -47,8 +47,10 @@ h1 {
 .menu-icon-wrapper {
 	float: right;
   position: absolute;
-  top: 12px;
+  top: 15px;
   right: 0;
+  width: 25px;
+  height: 20px;
 }
 
 .menu-icon-wrapper img {
@@ -59,11 +61,21 @@ h1 {
 @media only screen and (max-width: 640px) { 
 
 	body {
-  	padding: 20px !important;
+  	padding: 20px 20px 0!important;
 	}
 
 	header {
 		margin-bottom: 20px !important;
+	}
+
+	.menu-icon-wrapper {
+	  background: url('http://localhost:8888/KenMaycock/wp-content/themes/kenmaycock_1.0/library/images/icons/menu-icon-sprite.svg');
+	  background-repeat: no-repeat;
+	  cursor: pointer;
+	}
+
+	.close-menu-icon {
+		background-position-y: -20px;
 	}
 }
 
@@ -84,11 +96,16 @@ li.menu-items a:hover {
 
 img#menu-icon {
 	float: right;
+	display: none;
 }
 
 @media only screen and (max-width: 640px) { 
 	.hide-for-small-only {
 		visibility: hidden;
+	}
+
+	img#menu-icon {
+		display: block;
 	}
 
 	#slide-menu {
@@ -144,8 +161,20 @@ img#menu-icon {
 #main-content {
 	position: relative;
 	display: block;
-	height: 100%;
+	height: auto;
 	padding-right: 0 !important; 
+}
+
+#full-overlay {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0.7;
 }
 
 @media only screen and (max-width: 640px) { 
