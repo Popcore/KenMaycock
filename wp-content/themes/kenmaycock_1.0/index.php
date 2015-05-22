@@ -2,42 +2,13 @@
 
 <div id="main-content" class="row">
 
-	<div id="slide-menu">
+	<aside id="slide-menu" class="small-2 large-2 columns hide-for-small-only">
 		<ul>
-			<a href="#">
-				<li>Biography</li>
-			</a>
-			<a href="#">
-				<li>Artist Statement</li>
-			</a>
-			<a href="#">
-				<li>Work</li>
-			</a>
-			<a href="#">
-				<li>Exhibition</li>
-			</a>
-			<a href="#">
-				<li>Contact</li>
-			</a>
-		</ul>
-	</div>
-	<aside class="small-2 large-2 columns hide-for-small-only">
-		<ul>
-			<a href="#">
-				<li>Biography</li>
-			</a>
-			<a href="#">
-				<li>Artist Statement</li>
-			</a>
-			<a href="#">
-				<li>Work</li>
-			</a>
-			<a href="#">
-				<li>Exhibition</li>
-			</a>
-			<a href="#">
-				<li>Contact</li>
-			</a>
+				<li class="menu-items"><a href="#">Biography</a></li>			
+				<li class="menu-items"><a href="#">Artist Statement</a></li>
+				<li class="menu-items"><a href="#">Work</a></li>
+				<li class="menu-items"><a href="#">Exhibition</a></li>
+				<li class="menu-items"><a href="#">Contact</a></li>
 		</ul>
 	</aside>
 

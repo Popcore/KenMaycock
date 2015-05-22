@@ -4,12 +4,14 @@ jQuery(window).load( function() {
 
 	// Mobile open/close menu
 	$('#menu-icon').on('click', function() {
-		var slideMenu = $('div#slide-menu');
+		var slideMenu = $('aside#slide-menu');		
 
 		if(slideMenu.hasClass('open-slide-menu')) {
 			slideMenu.removeClass('open-slide-menu');
+			$('body').removeClass('inactive');
 		} else {
-			slideMenu.addClass('open-slide-menu');
+			slideMenu.css('visibility', 'visible').addClass('open-slide-menu');
+			$('body').addClass('inactive');
 		}
 		
 	});
