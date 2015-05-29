@@ -3,7 +3,7 @@
 		<a href="<?php echo WP_SITEURL; ?>/biography/">Biography</a>
 	</li>			
 	<li class="menu-items">
-		<a href="<?php echo WP_SITEURL; ?>">Artist Statement</a>
+		<a href="<?php echo WP_SITEURL; ?>/artist-statement/">Artist Statement</a>
 	</li>
 	<li class="menu-items">
 		<a href="<?php echo WP_SITEURL; ?>/works/">Work</a>

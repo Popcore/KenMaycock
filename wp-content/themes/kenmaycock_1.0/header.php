@@ -20,7 +20,7 @@
 					<h1>Ken Maycock</h1>
 
 					<div class="device menu-icon-wrapper">
-<!-- 						<img id="menu-icon" src="<?php echo TEMPLATEPATHO; ?>/library/images/icons/menu-open.svg" />
- -->					</div>
+<!-- 				<img id="menu-icon" src="<?php echo TEMPLATEPATHO; ?>/library/images/icons/menu-open.svg" />
+ -->			</div>
 				</div>
 		</header>

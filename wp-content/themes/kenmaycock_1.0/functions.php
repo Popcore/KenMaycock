@@ -13,6 +13,8 @@ function km_setup() {
 	} else {
 		update_option("medium_crop", "1");
 	}
+
+	remove_filter('the_content', 'wpautop');
     
 }
 add_action('after_setup_theme', 'km_setup');

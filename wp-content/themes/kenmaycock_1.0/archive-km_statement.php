@@ -2,7 +2,7 @@
 
 <div id="wrapper" class="row">
 
-	<h2>Biography</h2>
+	<h2>Artist Statement</h2>
 
 	<aside id="slide-menu" class="small-2 large-2 columns hide-for-small-only">
 		<?php get_sidebar(); ?>
@@ -11,7 +11,7 @@
 	<div id="main-content" class="small-10 medium-8 large-8 columns">
 			<?php			
 				$args = array(
-					'post_type'			 => 'km_bio',
+					'post_type'			 => 'km_statement',
 					'post_status'		 => 'publish',
 					'posts_per_page' => 1
 				);
@@ -22,7 +22,7 @@
 					while($bio_loop->have_posts()) {
 						$bio_loop->the_post();
 
-						$bio_text = get_field('biography');
+						$bio_text = get_field('statement');
 
 						echo '<p>' . $bio_text . '</p>';
 					}
