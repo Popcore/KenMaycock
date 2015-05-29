@@ -201,10 +201,28 @@ img#menu-icon {
 #solo-exhibitions h3, #group-exhibitions h3 {
 	font-weight: bold;
 	margin-bottom: 20px;
+	color: #5d5d5d;
+}
+
+#solo-exhibitions strong, #group-exhibitions strong {
+	font-weight: normal;
+	color: #5d5d5d;
 }
 
 #solo-exhibitions p, #group-exhibitions p {
 	margin-bottom: 20px;
+	color: #aaa9a9;
+}
+
+/*** CONTACT ****/
+.contact-text strong {
+	font-weight: bold;
+	color: #5d5d5d;
+}
+
+.contact-text p {
+	margin-bottom: 20px;
+	color: #5d5d5d;
 }
 
 /*** FOOTER ****/
