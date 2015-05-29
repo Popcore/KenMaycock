@@ -189,10 +189,12 @@ img#menu-icon {
 
 /*** FOOTER ****/
 footer {
+	clear: both;
 	height: auto;
   position: relative;
   bottom: 0;
   margin-top: 60px;
+  float: left;
 }
 
 #copyright {

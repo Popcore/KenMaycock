@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
-HELLO WORLD 2
-
-<div id="main-content" class="row">
+<div id="wrapper" class="row">
 
 	<aside id="slide-menu" class="small-2 large-2 columns hide-for-small-only">
 		<?php get_sidebar(); ?>
@@ -13,7 +11,7 @@ HELLO WORLD 2
 		$args = array(
 			'post_type'			=> 'km_work',
 			'post_status'		=> 'publish',
-			'post_per_page'	=> -1
+			'posts_per_page'	=> -1
 		);
 
 		$work_loop = new WP_Query($args);
@@ -37,6 +35,7 @@ HELLO WORLD 2
 		wp_reset_query();
 		?>
 	</div>
-</div>
 
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
+
+</div>
