@@ -19,7 +19,7 @@ jQuery(window).load( function() {
 			$('body').removeClass('inactive');
 			$('#full-overlay').remove();
 		} else {
-			slideMenu.css('visibility', 'visible').addClass('open-slide-menu');
+			slideMenu.addClass('open-slide-menu').css('visibility', 'visible');
 			$('body').addClass('inactive').append('<div id="full-overlay"></div>');
 		}
 	});
