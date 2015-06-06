@@ -1,6 +1,5 @@
 jQuery(window).load( function() {
 	(function($) {
-	console.log('rock n roll');
 
 	// Mobile open/close menu
 	$('.menu-icon-wrapper').on('click', function() {
@@ -23,8 +22,17 @@ jQuery(window).load( function() {
 			slideMenu.css('visibility', 'visible').addClass('open-slide-menu');
 			$('body').addClass('inactive').append('<div id="full-overlay"></div>');
 		}
-		
 	});
+
+	// hide revela thumbnail overlay
+	$('div.artwork').hover(
+		function() {
+			$(this).find('div.info-container').fadeIn();
+		},
+		function() {
+			$(this).find('div.info-container').fadeOut();
+		}
+	);
 
 	}(jQuery));
 
