@@ -2,7 +2,7 @@
 
 <h2>Works</h2>
 
-<div id="wrapper" class="row">
+<div id="wrapper" class="work row">
 
 	<aside id="slide-menu" class="small-2 large-2 columns hide-for-small-only">
 		<?php get_sidebar(); ?>

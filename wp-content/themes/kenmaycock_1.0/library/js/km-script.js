@@ -24,15 +24,54 @@ jQuery(window).load( function() {
 		}
 	});
 
-	// hide revela thumbnail overlay
+	// hide/reveal thumbnail overlay
 	$('div.artwork').hover(
 		function() {
-			$(this).find('div.info-container').fadeIn();
+			if(window.innerWidth > 480) {
+				$(this).find('div.info-container').fadeIn();
+			}
 		},
 		function() {
-			$(this).find('div.info-container').fadeOut();
+			if(window.innerWidth > 480) {
+				$(this).find('div.info-container').fadeOut();
+			}
 		}
 	);
+
+	// hide/reveal work subnav on work subpages
+	if(window.innerWidth < 640) {
+		$('a.work-link').on('click', function(ev) {
+			ev.preventDefault();
+			$('ul#work-subnav').slideToggle();
+		});
+	} else {
+		// display work sub nav if on work pages
+		if($('div#wrapper').hasClass('work')) {
+			var subnav = $('ul#work-subnav');
+			subnav.show();
+		}
+	}
+
+	$(window).on('resize', function() {
+		// remove overlay if is present
+		if($('div#full-overlay').length > 0) {
+			$('div#full-overlay').remove();
+		}
+
+		if(window.innerWidth > 640) {
+			
+			if($('.menu-icon-wrapper').hasClass('close-menu-icon')) {
+				$('.menu-icon-wrapper').removeClass('close-menu-icon');
+			} 
+
+			if($('aside#slide-menu').hasClass('open-slide-menu')) {
+				$('aside#slide-menu').removeClass('open-slide-menu');
+				$('body').removeClass('inactive');
+				$('#full-overlay').remove();
+			}
+		}
+	});
+
 
 	}(jQuery));
 

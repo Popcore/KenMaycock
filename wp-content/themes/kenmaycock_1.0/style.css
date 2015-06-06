@@ -90,6 +90,7 @@ h1 {
 /*** ASIDE ***/
 aside {
 	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 
 li.menu-items a {
@@ -102,9 +103,27 @@ li.menu-items a:hover {
 	color: #2b2b2b;
 } 
 
+ul#work-subnav {
+	display: none;
+}
+
+ul#work-subnav li a {
+	color: #aaa9a9;
+}
+
+ul#work-subnav li a:hover, ul#work-subnav li a.active {
+	color: #5d5d5d;
+}
+
 img#menu-icon {
 	float: right;
 	display: none;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 760px) {
+	li.menu-items a {
+		font-size: 13px;
+	}
 }
 
 @media only screen and (max-width: 640px) { 
@@ -154,6 +173,10 @@ img#menu-icon {
 		margin-top: 20px;
 	}
 
+	aside#slide-menu ul#work-subnav {
+		margin-top: 5px;
+	}
+
 	li.menu-items {
 		padding-left: 20px;
 		margin-bottom: 15px;	
@@ -161,6 +184,14 @@ img#menu-icon {
 
 	li.menu-items a {
 		font-size: 18px;
+	}
+
+	ul#work-subnav {
+		display: none;
+	}
+
+	ul#work-subnav li {
+		margin-top: 10px;
 	}
 
 }
@@ -194,7 +225,7 @@ img#menu-icon {
 /*** WORK ***/
 .artwork {
 	padding: 0 !important;
-	width: 48% !important;
+	width: 49% !important;
  	margin-bottom: 2% !important;
 }
 
@@ -236,7 +267,25 @@ p.artwork-year {
   top: 0;
 }
 
-@media only screen and (max-width: 640px) { 
+@media only screen and (max-width: 480px) { 
+	.info-container {
+		display: block !important;
+		font-size: 12px;
+	}
+
+	.overlay {
+	  background-color: rgba(0, 0, 0, 0.2);
+	}
+
+	h3.artwork-title {
+		bottom: 22px;
+	  left: 10px;
+	}
+
+	p.artwork-year {
+		bottom: 8px;
+  	left: 10px;
+	}
 }
 
 /*** BIOGRAPHY ***/

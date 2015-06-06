@@ -5,7 +5,7 @@
 
 <?php get_header(); ?>
 
-<div id="wrapper" class="row">
+<div id="wrapper" class=" work row">
 
 	<h2>Landscape</h2>
 
