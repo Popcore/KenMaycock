@@ -193,6 +193,11 @@ img#menu-icon {
 
 /*** HOME ***/
 
+/*** BIOGRAPHY ***/
+.bio-text p {
+	margin-bottom: 20px;
+}
+
 /*** EXHIBITONS ****/
 #solo-exhibitions, #group-exhibitions {
 	padding-left: 0;

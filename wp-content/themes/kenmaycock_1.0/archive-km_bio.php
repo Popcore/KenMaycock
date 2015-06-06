@@ -8,7 +8,7 @@
 		<?php get_sidebar(); ?>
 	</aside>
 
-	<div id="main-content" class="small-10 medium-8 large-8 columns">
+	<div id="main-content" class="bio-text small-10 medium-8 large-8 columns">
 			<?php			
 				$args = array(
 					'post_type'			 => 'km_bio',
@@ -24,7 +24,7 @@
 
 						$bio_text = get_field('biography');
 
-						echo '<p>' . $bio_text . '</p>';
+						echo $bio_text;
 					}
 				}
 
