@@ -14,6 +14,7 @@ wp-content/*
 # Ignore all .css files in library except main compiled style.css
 *.sass-cache*
 wp-content/themes/bamford/library/*.css
+wp-content/themes/bamford/library/fonts/*
 !wp-content/themes/bamford/style.css
 !wp-content/themes/bamford/library/style.css
 !wp-content/themes/bamford/library/early-is.css

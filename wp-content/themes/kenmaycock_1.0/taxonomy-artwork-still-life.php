@@ -7,7 +7,7 @@
 
 <div id="wrapper" class="work row">
 
-	<h2>Landscape</h2>
+	<h2>Still Life</h2>
 
 	<aside id="slide-menu" class="small-2 medium-3 large-3 columns hide-for-small-only">
 		<?php get_sidebar(); ?>
@@ -23,7 +23,7 @@
 						array(
 							'taxonomy' => 'artwork',
 							'field' 	 => 'slug',
-							'terms' 	 => 'landscape'
+							'terms' 	 => 'still-life'
 						)
 					)
 				);

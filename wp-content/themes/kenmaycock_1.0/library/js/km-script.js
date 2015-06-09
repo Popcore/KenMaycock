@@ -1,6 +1,27 @@
 jQuery(window).load( function() {
 	(function($) {
 
+	var currentPage = window.location.pathname;
+	$('a.menu-link').each(function() {
+		var $this = $(this),
+				linkData = $this.data('link'),
+				artworkName = $('h2#artwork-title').text();
+
+		console.log(artworkName);
+
+		if(currentPage.indexOf(linkData) > -1) {
+			$this.addClass('active-menu-item');
+		}
+
+		console.log($this.text());
+
+		if(artworkName !== undefined) {
+			if($this.text() == artworkName) {
+				$this.addClass('active-menu-item');
+			}
+		}
+	})
+
 	// Mobile open/close menu
 	$('.menu-icon-wrapper').on('click', function() {
 		var slideMenu = $('aside#slide-menu'),
@@ -54,8 +75,10 @@ jQuery(window).load( function() {
 
 	$(window).on('resize', function() {
 		// remove overlay if is present
-		if($('div#full-overlay').length > 0) {
-			$('div#full-overlay').remove();
+		if(!$('aside#slide-menu').hasClass('open-slide-menu')) {
+			if($('div#full-overlay').length > 0) {
+				$('div#full-overlay').remove();
+			}
 		}
 
 		if(window.innerWidth > 640) {
@@ -71,6 +94,8 @@ jQuery(window).load( function() {
 			}
 		}
 	});
+
+	// highlight menu
 
 
 	}(jQuery));
